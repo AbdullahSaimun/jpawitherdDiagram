@@ -9,10 +9,10 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class SubjectTeacherResponseDTO {
 	private Integer id;
-	private Integer subject_id;
+	private Integer subjectId;
 	private String subjectName;
-	private Integer teacher_id;
+	private Integer teacherID;
 	private String teacherName;
-	private Integer group_id;
+	private Integer groupId;
 	private String groupName;
 }

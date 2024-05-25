@@ -26,9 +26,9 @@ public class SubjectTeacherService {
 				.map(obj -> {
 					SubjectTeacherResponseDTO dto = new SubjectTeacherResponseDTO();
 					dto.setId(obj.getId());
-					dto.setTeacher_id(obj.getId());
-					dto.setSubject_id(obj.getSubject().getId());
-					dto.setGroup_id(obj.getStudyGroup().getId());
+					dto.setTeacherID(obj.getTeacher().getId());
+					dto.setSubjectId(obj.getSubject().getId());
+					dto.setGroupId(obj.getStudyGroup().getId());
 					dto.setTeacherName(STR."\{obj.getTeacher().getFirstName()} \{obj.getTeacher().getLastName()}");
 					dto.setSubjectName(obj.getSubject().getTitle());
 					dto.setGroupName(obj.getStudyGroup().getName());
