@@ -75,12 +75,12 @@ public class DataLoader implements CommandLineRunner {
 		// SubjectTeacher relationships
 		SubjectTeacher subjectTeacher1 = new SubjectTeacher();
 		subjectTeacher1.setSubject(subject1);
-		subjectTeacher1.setTeacher(teacher1);
+		subjectTeacher1.setTeacher(teacher2);
 		subjectTeacher1.setStudyGroup(group1);
 
 		SubjectTeacher subjectTeacher2 = new SubjectTeacher();
 		subjectTeacher2.setSubject(subject2);
-		subjectTeacher2.setTeacher(teacher2);
+		subjectTeacher2.setTeacher(teacher1);
 		subjectTeacher2.setStudyGroup(group2);
 
 		subjectTeacherService.saveAll(Arrays.asList(subjectTeacher1, subjectTeacher2));

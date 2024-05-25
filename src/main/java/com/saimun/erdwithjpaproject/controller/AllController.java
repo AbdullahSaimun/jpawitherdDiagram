@@ -1,5 +1,6 @@
 package com.saimun.erdwithjpaproject.controller;
 
+import com.saimun.erdwithjpaproject.dto.SubjectTeacherResponseDTO;
 import com.saimun.erdwithjpaproject.model.*;
 import com.saimun.erdwithjpaproject.service.*;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -52,7 +53,7 @@ public class AllController {
 		return studyGroupService.getAllGroups();
 	}
 	@GetMapping(value = "/subjectTeacherList", produces = "application/json")
-	public List<SubjectTeacher> getAllSubjectTeacher() {
+	public List<SubjectTeacherResponseDTO> getAllSubjectTeacher() {
 		return subjectTeacherService.getAllSubjectTeachers();
 	}
 }
