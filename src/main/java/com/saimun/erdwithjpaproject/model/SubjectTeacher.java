@@ -18,16 +18,16 @@ public class SubjectTeacher {
 
 	@ManyToOne(fetch = FetchType.LAZY)
 	@JoinColumn(name = "subject_id", nullable = false)
-	@JsonBackReference
+//	@JsonBackReference
 	private Subject subject;
 
 	@ManyToOne(fetch = FetchType.LAZY)
 	@JoinColumn(name = "teacher_id", nullable = false)
-	@JsonBackReference
+//	@JsonBackReference
 	private Teacher teacher;
 
 	@ManyToOne(fetch = FetchType.LAZY)
 	@JoinColumn(name = "group_id", nullable = false)
-	@JsonBackReference
+//	@JsonBackReference
 	private StudyGroup studyGroup;
 }
