@@ -30,12 +30,12 @@ This project implements JPA entities with various relationships and annotations 
    
 5. **@JsonManagedReference**
     - Used on the owning side of a bidirectional relationship for proper JSON serialization.
-    - (parent)
+    - will be included in the JSON.
 
 
 6. **@JsonBackReference**
     - Used on the inverse side of a bidirectional relationship to avoid circular references during JSON serialization.
-    - (child)
+    - Omit from serialization to avoid recursion
 
 
 ## Usage
